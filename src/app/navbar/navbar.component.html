@@ -1,7 +1,34 @@
-<nav>
-  <div><a href="">Favorite Literature Books</a></div>
-  <div><a href="">Favorite Games</a></div>
-  <div>
-    <a href="{{ LINK }}" target="_blank">YouTube Channel</a>
-  </div>
-</nav>
+<router-outlet>
+  <nav>
+    <div>
+      <a
+        href="/favorite-literature"
+        routerLink="app-favorite-literature"
+        routerLinkActive="activebutton"
+        ariaCurrentWhenActive="page"
+      >
+        Favorite Literature Books
+      </a>
+    </div>
+    <div>
+      <a
+        href="/favorite-movies"
+        routerLink="app-favorite-movies"
+        routerLinkActive="activebutton"
+        >Favorite movies</a
+      >
+    </div>
+    <div>
+      <a
+        href="/favorite-games"
+        routerLink="app-favorite-games"
+        ariaCurrentWhenActive="page"
+      >
+        Favorite Games</a
+      >
+    </div>
+    <div>
+      <a href="{{ LINK }}" target="_blank">YouTube Channel</a>
+    </div>
+  </nav>
+</router-outlet>
